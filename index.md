@@ -29,3 +29,33 @@ Ways to print hello in languages
 An Image can also be added
 
 ![Github Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+
+
+***
+##Code Examples for the styling
+
+Itallic: `*italic*` or `_italic_`
+
+Bold: `**bold**` or `__bold__`
+
+Headings `#heading` the more # used the smaller the headings
+
+Links: `[Link](url)` where link is the text to link and url is the url of the website to link
+
+Images: `![Image](url)`
+
+Blockquotes `>Blockquote`
+
+Unordered List:
+```
+-Item
+*Item
+````
+
+Ordered List:
+```
+1. item
+1) item
+```
+
+Horizonal rule: `*** or ---`
