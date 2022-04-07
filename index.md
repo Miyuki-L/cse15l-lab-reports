@@ -1,3 +1,6 @@
+# Link to Lab report
+[Lab Report 1 Week 2](lab-report-1-week-2.md)
+
 # CSE 15L Lab 2
 
 This is an _italizised_ text which can also be italizised this way *text* `*italic*` or `_italic_`
