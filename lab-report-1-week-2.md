@@ -94,7 +94,21 @@
    * if <path> designates a file it will show you the contents of the tile
    * if <path> is an directory it will tell you that it is an directory
 
+
 ## Moving Files with `scp`
+`scp` stands for secure copy\
+`scp` is used to copy a file or directory from your local computer into the remote computer
+
+### How to use `scp`
+In the terminal of your local computer use the following command
+   * `scp <thing to copy> <computer to copy to>: <destination location on the computer>`
+   * ex: `scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu: ~/`
+      * this will copy the file WhereAmI.java to the computer user cs15lsp22zz can access and into its home directory.
+   * It will prompt you for your password. Use the same password that you use to log into ssh
+
+Here is an working example
+![example of scp](lab1-Images\scpExample.png)
+
 
 ## Setting an SSH Key
 
