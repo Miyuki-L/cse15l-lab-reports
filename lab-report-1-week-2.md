@@ -111,5 +111,37 @@ Here is an working example
 
 
 ## Setting an SSH Key
+Reasons we want to set up an SSH Key
+* We would not have to type in your password every time we log in.
+* We would not have to type in your password every time you want to copy a file over to the remote computer
+* Saves a lot of time when you have to copy a lot of files or when you need to log in and out a lot of times.
 
+### Instructions
+#### First on your local computer
+1. Run `ssh-keygen`
+2. It will prompt for 3 things
+   * First: "Enter file in which to save the key"  simply just press enter
+   * Second: "Enter passphrase (empty for no passphare)" simply just press enter again
+   * Third: "Enter same passphrase again" simply press enter again
+3. It will tell you where your public key is saved. Keep note of that file path. You will need it later.
+
+#### Window Users Only(May be optional I did it though)
+* Instructions can be found [here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).
+* Note: to run powershell as administrator search for powershell and then click the option to run as administrator as shown below
+   ![running as administrator](lab1-Images\powershell.png)
+
+#### Moving the Public Key over
+1. Still be on your local computer
+2. Run the command 
+   * `scp <path to local copy of public key> <account name>@ieng6.ucsd.edu: ~/.ssh/authorized_keys`
+   * Ex: `scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22<your specific letters></your>@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+3. It may prompt you for a password. Use the usual password
+
+#### Testing it out
+1. Now try to access the remote computer
+2. Use the command that you have been using
+   *`ssh cs15lsp22[insert your specific letters]@ieng6.ucsd.edu`
+3. If things are done right this time you log in you should not be prompted for a password.
+4. An example of how the interaction would look like
+   ![Logging in without password](lab1-Images\kegenLogin.png)
 ## Optimizing Remote Running
