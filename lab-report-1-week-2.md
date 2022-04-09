@@ -144,4 +144,20 @@ Reasons we want to set up an SSH Key
 3. If things are done right this time you log in you should not be prompted for a password.
 4. An example of how the interaction would look like
    ![Logging in without password](lab1-Images\kegenLogin.png)
+
+
 ## Optimizing Remote Running
+
+There many ways to make the interactions easier an faster\
+Here are some ways
+* Up arrow: use the up arrow in ther terminal to rerun commands without having to retype them.
+* ; : you can use semicolons to run multiple commands at once
+   * This way you do not have to press enter after each command and wait for it to run.
+* "": use quotations to wrap commands after your ssh command. 
+   * This will connect to the remote computer. Run the commands in the quotation marks then automatically disconnect afterwards
+
+Here is an example:
+   * `ssh cs15lsp22[your specific letters]@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"`
+      * This command connects to the remote computer. Compiles WhereAmI.java and runs it.
+   ![example of optimizing](lab1-Images\optimizing.png)
+
