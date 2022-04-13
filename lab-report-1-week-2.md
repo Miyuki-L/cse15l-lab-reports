@@ -32,7 +32,7 @@
 4. Search for and install OpenSSH Client.
 
 ### Finding Your Course-Specific account
-1. Go to https://sdacs.ucsd.edu/~icc/index.php and find your account.
+1. Go [here](https://sdacs.ucsd.edu/~icc/index.php) and find your account.
    * For CSE 15L, the account follows the formate cs15lsp22____ 
       * The underscored section is unique to each student.
 2. Once you found your account name you may need to reset your password. 
@@ -44,7 +44,7 @@
    ![Opening a Terminal in VScode](lab1-Images\openingTerminal.png)
 2. Type in ther terminal the following command:
    * `ssh cs15lsp22[insert your specific letters]@ieng6.ucsd.edu`
-   * so the format of the command is ssh [your specific account]@ieng6.ucsd.edu
+   * so the format of the command is `ssh [your specific account]@ieng6.ucsd.edu`
 3. Then it will prompt you for a password. Type in your password
    * Don't worry if you do not see the usual **** when you type your password. It will look like you are not typing anything but you are. 
 4. Once you get in you should see something like this
