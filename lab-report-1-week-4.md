@@ -3,7 +3,7 @@
 ## Code Change 1: Identificatoin of Images Bug
 [Link to commit](https://github.com/Miyuki-L/markdown-parser/commit/54e14a9bd72f58eb66159342c38a14db985d04d4?diff=split) containing the changes.
 ### Screenshot of the Code Change diff from Github
-![Image identified as link code diff](lab2-Images\imageIdnetificationFixCodeDiff.png)
+![Image identified as link code diff](lab2-Images\imagebugcodediff.png)
 ### Link to test file containing failure-inducing input
 Here is the link to the failure-inducing input
 [file link](https://github.com/Miyuki-L/markdown-parser/blob/main/test2.md).
