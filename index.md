@@ -1,6 +1,7 @@
 # Link to Lab report
-[Lab Report 1 Week 2](lab-report-1-week-2.md)
-[Lab Report 2 Week 4](lab-report-1-week-4.md)
+* [Lab Report 1 Week 2](lab-report-1-week-2.md)
+
+* [Lab Report 2 Week 4](lab-report-1-week-4.md)
 
 # CSE 15L Lab 2
 

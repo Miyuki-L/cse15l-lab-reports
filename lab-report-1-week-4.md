@@ -1,8 +1,9 @@
 # Lab Report 2 Week 4: Debugging and Testing
 
-## Code Change 1: Identificatoin of Images
+## Code Change 1: Identificatoin of Images Bug
+[Link to commit](https://github.com/Miyuki-L/markdown-parser/commit/54e14a9bd72f58eb66159342c38a14db985d04d4?diff=unified)
 ### Screenshot of the Code Change diff from Github
-![Image identified as link symptom](lab2-Images\imageIdnetificationFixCodeDiff.png)
+![Image identified as link code diff](lab2-Images\imageIdnetificationFixCodeDiff.png)
 ### Link to test file containing failure-inducing input
 Here is the link to the failure-inducing input
 [file link](https://github.com/Miyuki-L/markdown-parser/blob/main/test2.md).
