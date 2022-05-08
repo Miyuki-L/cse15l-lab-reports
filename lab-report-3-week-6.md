@@ -55,4 +55,35 @@ Now if you run the command `git push` it should work and here is the resulting [
 ---
 
 ## Copy Whole Directories with `scp -r`
-When you are scp-ing a small group of files(your scenario) you need to make sure that the target directory exists in remote. If you are scp-ing the entire folder then the folder is automatically created if it does not exist already.
+The `-r` is for recursive which allows us to copy the entire directory.
+### Copy Whole Directory
+* Template: `scp -r [path to directory to copy] [server]:[location to copy to]`
+   * e.g. `scp -r . ieng6:~/markdown-parser`
+      * This will copy the present directory over to a directory called markdown-parser on the server we nicknamed ieng6.
+      * If the destination directory exists then it'll copy it into that directory but if not it'll create it.
+
+   ![Recursive Copy Directory with scp -r](lab3-Images\scp-whole-dir-recursively.png)
+   * Note: picture only shows the begining few lines as the output is too long to show.
+* Now you can run the tests in the directory that you just copied on the ieng6 server
+   ![running tests on ieng6 server](lab3-Images\compile-run-markdown-test-in-ieng6.png)
+### Copy Select Files
+* Template: `scp -r [path of files, types of files, or directory to copy] [server]:[location to copy to]`
+   * e.g. `scp -r *.java *.md lib/ ieng6:~/markdown-parse`
+      * This will copy all the java and md files in the present directory into the markdown-parse directory in remote server ieng6.
+      * **Note: the directory must already be present on the remote server**
+
+   ![scp parts of a directory](lab3-Images\scp-part-ssh-compile-run-test-in-ieng6.png)
+
+### Copy and Run in Same Line
+The following command would copy the entire directory over to the remote server then log on to the server, compile and run the tests.
+
+* `scp -r . ieng6:~/markdown-parse;ssh ieng6 "cd markdown-parse/;/software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java;/software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"`
+
+![scp and ssh in same line compile and run](lab3-Images\scp-ssh-whole-one-line-part-1.png)
+![scp and ssh in same line compile and run](lab3-Images\scp-ssh-whole-one-line-part-2.png)
+
+Things to note:
+* When running javac and java commands with ssh as in the command above, the server uses an older version of java, which results in a error message like:
+   ![java compile error](lab3-Images\same-line-running-java-version-error.png)
+* Solution: replace javac with `/software/CSE/oracle-java-17/jdk-17.0.1/bin/javac` and java with `/software/CSE/oracle-java-17/jdk-17.0.1/bin/java`. 
+
