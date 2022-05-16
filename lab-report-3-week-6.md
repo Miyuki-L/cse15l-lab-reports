@@ -32,7 +32,6 @@
 ---
 ## Set Up Github Access from ieng6
 This section will allow you to complete actions like git push from the command line. Demo would be done using the ieng6 server
-![Git Push Failing on ieng6](lab3-Images\git-push-fail-on-ieng6.png)
 
 ### Instruction
 1. First connect to the ieng6 remote server
@@ -48,9 +47,8 @@ This section will allow you to complete actions like git push from the command l
 ![Adding public Key to Github](lab3-Images/public-key-on-github.png)
 
 ### Demo
-Now if you run the command `git push` it should work and here is the resulting [git commit](https://github.com/Miyuki-L/CSE15L-Skill-Demo-1/commit/58638af45770887390b0d3848f4e04cef0a42bf9).
-![Working Git commit on ieng6](lab3-Images/git-commit-on-ieng6.png)
-![Working Git push on ieng6](lab3-Images/git-push-on-ieng6.png)
+Now if you run the command `git push` it should work and here is the resulting [git commit](https://github.com/Miyuki-L/CSE15L-Skill-Demo-1/commit/b34aea40bd67e2a3cf78ffb2ee6c4a2ffd2ddd32).
+![Working Git commit and push on ieng6](lab3-Images/git-commit-and-push-on-ieng6.png)
 
 ---
 
@@ -84,6 +82,7 @@ The following command would copy the entire directory over to the remote server 
 
 Things to note:
 * When running javac and java commands with ssh as in the command above, the server uses an older version of java, which results in a error message like:
+   ![java compile error](lab3-Images\same-line-runing-java-version-error-part1.png) 
    ![java compile error](lab3-Images\same-line-running-java-version-error.png)
 * Solution: replace javac with `/software/CSE/oracle-java-17/jdk-17.0.1/bin/javac` and java with `/software/CSE/oracle-java-17/jdk-17.0.1/bin/java`. 
 
