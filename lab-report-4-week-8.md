@@ -53,7 +53,7 @@ The expected output should be the list
 #### My Repository's JUnit Test
 ![JUnit test code snippet 2 my repo](lab4-Images\myrepositorytestsnippet2.png)
 #### Reviewed Repository's JUnit Test
-![JUnit test code snippet 1 reviewed repo](lab4-Images\reviewedrepositorytestsnippet2.png)
+![JUnit test code snippet 2 reviewed repo](lab4-Images\reviewedrepositorytestsnippet2.png)
 #### JUnit Test Output on My Repository
 ![JUnit Output on my repository](lab4-Images\myrepositorysnippet2output.png)
 #### JUnit Test Output on Reviewed Repository
@@ -91,4 +91,21 @@ And there's still some more text after that.
 
 And then there's more text
 ```
+### Expected Output
+![Expected Output of Snippet 3](lab4-Images\snippet3Preview.png)
+The expected output should be the list 
+* ```["https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule"]```
+
+### JUnit test
+#### My Repository's JUnit Test
+![JUnit test code snippet 3 my repo](lab4-Images\myrepositorytestsnippet3.png)
+#### Reviewed Repository's JUnit Test
+![JUnit test code snippet 3 reviewed repo](lab4-Images\reviewedrepositorytestsnippet3.png)
+#### JUnit Test Output on My Repository
+![JUnit Output on my repository](lab4-Images\myrepositorysnippet3output.png)
+#### JUnit Test Output on Reviewed Repository
+![JUnit Output on reviewed repository](lab4-Images\reviewedrepositorysnippet3output.png)
+
+### Code Change Review on My Repository
+I think this would be a small code change just a few if statements. First is to check if there are consecutive line breaks in the text between the brackets and if there are it is no longer a link. Second is to check if the potential link contains line breaks and if it does only a single linebreak before and or after the potential link is allowed, other cases it is not a link.   
 
