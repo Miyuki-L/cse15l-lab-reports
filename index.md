@@ -4,6 +4,8 @@
 * [Lab Report 2 Week 4](lab-report-2-week-4.md)
 
 * [Lab Report 3 Week 6](lab-report-3-week-6.md)
+
+* [Lab Report 4 Week 8](lab-report-4-week-8.md)
 # CSE 15L Lab 2
 
 This is an _italizised_ text which can also be italizised this way *text* `*italic*` or `_italic_`
